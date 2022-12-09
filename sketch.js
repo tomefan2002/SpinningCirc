@@ -9,12 +9,12 @@ function setup() {
 function draw() {
   background(255, 70);
   translate(width / 2, height / 2);
-  rotate(circRotateClock*1.25);
+  rotate(circRotateClock*1.45);
   circRotateClock++;
   noFill();
   stroke(139, 0, 0);
   strokeWeight(2);
-
+  
   for (let i = 0; i < 100; i++) {
     console.log(i);
 
@@ -23,6 +23,7 @@ function draw() {
     arc(75 + 32, 0, 40, 27.5, 180, 0);
     arc(75 + 32 * 2, 0, 25, 20, 0, 180);
     arc(75 + 32 * 3, 0, 40, 27.5, 180, 0);
-
+    ellipse(0,0,381,381);
+    ellipse(0,0,125,125);
   }
 }
